@@ -1,0 +1,39 @@
+@media screen and (max-width:600px) {
+    
+    .logo{
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }
+
+    header .container{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+    }
+
+    .botao{
+        margin-top: 1%;
+    }
+
+    .botao2{
+        display: none;
+    }
+
+    .imglogo{
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+@media  screen and (min-width:1000px) {
+    .sinopse{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:350px){
+    header div nav{
+        display: none;
+    }
+}

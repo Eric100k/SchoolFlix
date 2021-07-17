@@ -1,0 +1,125 @@
+/*reset Padrão*/
+/*Não esquece de colocar ; (ponto virgula) fdp*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Declarar variaveis*/
+
+:root{
+    --vermelho: #E50914;
+    --preto: #202124;
+    --preto2:rgba(0, 0, 0,.50);
+}
+
+/*Vamos por partes*/
+
+body{
+    background-color: var(--preto);
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; /*Netflix font family*/
+    color: white;
+}
+
+.logo{
+    margin: 15px;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row; /* row faz ficar em fila */
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 2%;
+}
+
+/*Links da barra de cima*/
+
+header div nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+/* hover é pra quando a seta estiver sobre os links*/
+
+header div nav a:hover{ 
+    color: var(--vermelho);
+}
+
+/*Filme principal*/
+
+    /*Bloco principal*/
+
+        /*Fundo*/
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0, 0, 0, .50)100%), url('../img/Filmes/guerrasdobrasil/iy9g2pArQhcF0uC7qsBcFEIoek.jpg');
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .sinopse{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .container{
+    margin-bottom: 40px;
+    margin-left: 25px;
+    width: 70%;
+}
+
+.titulo{
+    font-size: 24px;
+    margin-top: 15%;
+}
+
+        /*Botoes*/
+.botao, .botao2{
+    background-color: rgba(0, 0, 0,.50);
+    color: white;
+    border: none;
+
+    padding: 15px 30px;
+    margin-left: 25px;
+
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.botao:hover{
+    background-color: var(--vermelho);
+    transition: .3s ease all;
+
+}
+.botao2:hover{
+    background-color: white;
+    color: var(--preto);
+    transition: .3s ease all;
+}
+
+.botao i,.botao2 i{
+    margin-right: 8px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.subtitulo{
+padding: 10px;
+border-top: 20%;
+}
+
+.imglogo{
+    width: 500px;
+}
